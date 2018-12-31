@@ -218,3 +218,13 @@ using the `--install-prefix` option to `script/cmake`. It is convenient to point
 at a directory containing a `bin` directory that is prepopulated with an
 `elk.cfg` configuration file and all required ROM images in a `roms`
 subdirectory.
+
+You can grab the ROMs from the original build of Elkulator and place them in the `roms` subdirectory alongside the executable built above:
+
+```bash
+$ cd elkulator/build/debug
+$ mkdir roms
+$ wget -O - http://elkulator.acornelectron.co.uk/ElkulatorV1.0Linux.tar.gz | tar xvz roms
+```
+
+This will extract the contents of the `roms` directory in the tarball into the `roms` subdirectory of the Git repo.
