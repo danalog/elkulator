@@ -24,6 +24,7 @@ These steps have been tested on Ubuntu 12.04 x64.
 
 ```bash
 $ sudo apt-get install \
+  cmake \
   liballegro4-dev \
   libopenal-dev \
   libalut-dev \
