@@ -228,3 +228,18 @@ $ wget -O - http://elkulator.acornelectron.co.uk/ElkulatorV1.0Linux.tar.gz | tar
 ```
 
 This will extract the contents of the `roms` directory in the tarball into the `roms` subdirectory of the Git repo.
+
+You should also grab the sound files:
+
+```bash
+$ cd elkulator/build/debug
+$ cp -r ../../ddnoise/ .
+```
+
+And the sample `elk.cfg` configuration file:
+
+
+```bash
+$ cd elkulator/build/debug
+$ cp ../../samples/elk.cfg .
+```
